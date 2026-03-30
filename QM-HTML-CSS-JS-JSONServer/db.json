@@ -1,3 +1,142 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "Anjali Singh",
+      "email": "anjalikumari270704@gmail.com",
+      "password": "Anjali27@",
+      "mobile": "07439595181",
+      "id": "60rt19-LDqU"
+    }
+  ],
+  "history": [
+    {
+      "type": "length",
+      "fromValue": 6,
+      "fromUnit": "Metres",
+      "toValue": 600,
+      "toUnit": "Centimetres",
+      "id": "w2fGZ8gk0hs"
+    },
+    {
+      "type": "temperature",
+      "fromValue": 1,
+      "fromUnit": "Celsius",
+      "toValue": 1,
+      "toUnit": "Celsius",
+      "id": "VYAxD8DmIHw"
+    },
+    {
+      "type": "volume",
+      "fromValue": 26000000,
+      "fromUnit": "Millilitres",
+      "toValue": 26000000,
+      "toUnit": "Millilitres",
+      "id": "qQSoIfCjmnI"
+    },
+    {
+      "type": "weight",
+      "fromValue": 19000,
+      "fromUnit": "Kilograms",
+      "toValue": 19000000,
+      "toUnit": "Grams",
+      "id": "EqJ1SlzUECk"
+    },
+    {
+      "type": "length",
+      "fromValue": 12090,
+      "fromUnit": "Metres",
+      "toValue": 1209000,
+      "toUnit": "Centimetres",
+      "id": "uvUrVhTNR1I"
+    },
+    {
+      "type": "length",
+      "operation": "convert",
+      "firstValue": 1000,
+      "firstUnit": "Metres",
+      "secondValue": null,
+      "secondUnit": null,
+      "operator": null,
+      "result": "100000 Centimetres",
+      "id": "7AzOnPyn1nE"
+    },
+    {
+      "type": "length",
+      "operation": "compare",
+      "firstValue": 13,
+      "firstUnit": "Metres",
+      "secondValue": 8,
+      "secondUnit": "Centimetres",
+      "operator": "==",
+      "result": "Not Equal",
+      "id": "lqyWQgnPxrc"
+    },
+    {
+      "type": "length",
+      "operation": "arithmetic",
+      "firstValue": 15,
+      "firstUnit": "Metres",
+      "secondValue": 1,
+      "secondUnit": "Centimetres",
+      "operator": "*",
+      "result": "0.15 Metres",
+      "id": "RgjBwPOTTbc"
+    },
+    {
+      "type": "temperature",
+      "operation": "convert",
+      "firstValue": 1,
+      "firstUnit": "Celsius",
+      "secondValue": null,
+      "secondUnit": null,
+      "operator": null,
+      "result": "33.8 Fahrenheit",
+      "id": "YAwokr3iRV0"
+    },
+    {
+      "type": "length",
+      "operation": "convert",
+      "firstValue": 1,
+      "firstUnit": "Metres",
+      "secondValue": null,
+      "secondUnit": null,
+      "operator": null,
+      "result": "1 Metres",
+      "id": "8RnSXd7o664"
+    },
+    {
+      "type": "length",
+      "operation": "compare",
+      "firstValue": 5,
+      "firstUnit": "Metres",
+      "secondValue": 1,
+      "secondUnit": "Centimetres",
+      "operator": "==",
+      "result": "Not Equal",
+      "id": "9WFZffhatto"
+    },
+    {
+      "type": "length",
+      "operation": "convert",
+      "firstValue": 1000,
+      "firstUnit": "Metres",
+      "secondValue": null,
+      "secondUnit": null,
+      "operator": null,
+      "result": "1 Kilometres",
+      "id": "z1RQUp_oteA"
+    },
+    {
+      "type": "length",
+      "operation": "compare",
+      "firstValue": 1000,
+      "firstUnit": "Metres",
+      "secondValue": 1,
+      "secondUnit": "Kilometres",
+      "operator": "==",
+      "result": "Equal",
+      "id": "DsstdTy69iU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
