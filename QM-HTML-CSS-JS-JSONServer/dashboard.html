@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantity Measurement Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-page">
+
+    <!-- Breadcrumb -->
+    <div class="dashboard-breadcrumb">
+      <span>Quantity Measurement</span>
+      <span class="dashboard-arrow">></span>
+      <span id="selectedTitle">Length Measurement</span>
+    </div>
+
+    <!-- Top bar -->
+    <div class="dashboard-topbar">
+      <h2>QUANTITY MEASUREMENT APP</h2>
+      <a href="#" id="historyBtn">History</a>
+    </div>
+
+    <!-- Welcome -->
+    <div class="dashboard-welcome">
+      <h1>Welcome To Quantity Measurement</h1>
+    </div>
+
+    <div class="dashboard-container">
+
+      <h3>CHOOSE TYPE</h3>
+
+      <div class="dashboard-cards">
+        <div class="dashboard-card active" data-type="length">
+          <div class="dashboard-icon">📏</div>
+          <p>Length</p>
+        </div>
+
+        <div class="dashboard-card" data-type="temperature">
+          <div class="dashboard-icon">🌡️</div>
+          <p>Temperature</p>
+        </div>
+
+        <div class="dashboard-card" data-type="volume">
+          <div class="dashboard-icon">🧪</div>
+          <p>Volume</p>
+        </div>
+
+        <div class="dashboard-card" data-type="weight">
+          <div class="dashboard-icon">⚖️</div>
+          <p>Weight</p>
+        </div>
+      </div>
+
+      <!-- Operation buttons -->
+      <h3>CHOOSE OPERATION</h3>
+      <div class="dashboard-operation-buttons">
+        <button type="button" class="op-btn active-op" id="convertModeBtn">Convert</button>
+        <button type="button" class="op-btn" id="compareModeBtn">Compare</button>
+        <button type="button" class="op-btn" id="arithmeticModeBtn">Arithmetic</button>
+      </div>
+
+      <!-- Input section -->
+      <div class="dashboard-conversion">
+
+        <div class="dashboard-box">
+          <label for="firstValue">FIRST VALUE</label>
+          <input type="number" id="firstValue" value="1" />
+          <select id="firstUnit"></select>
+        </div>
+
+        <div class="dashboard-box">
+          <label for="secondValue">SECOND VALUE</label>
+          <input type="number" id="secondValue" value="1" />
+          <select id="secondUnit"></select>
+        </div>
+
+      </div>
+
+      <!-- Arithmetic operator -->
+      <div class="dashboard-operator-box" id="operatorBox" style="display: none;">
+        <label for="operatorSelect">ARITHMETIC OPERATION</label>
+        <select id="operatorSelect">
+          <option value="+">Addition (+)</option>
+          <option value="-">Subtraction (-)</option>
+          <option value="*">Multiplication (*)</option>
+          <option value="/">Division (/)</option>
+        </select>
+      </div>
+
+      <!-- Target unit for conversion/arithmetic -->
+      <div class="dashboard-result-unit-box" id="resultUnitBox">
+        <label for="resultUnit">RESULT UNIT</label>
+        <select id="resultUnit"></select>
+      </div>
+
+      <!-- Action button -->
+      <button type="button" id="actionBtn" class="dashboard-convert-btn">Convert</button>
+
+      <!-- Result -->
+      <div class="dashboard-result-box">
+        <label for="resultValue">RESULT</label>
+        <input type="text" id="resultValue" readonly />
+      </div>
+
+      <p id="dashboardMessage" class="dashboard-message"></p>
+
+      <!-- History -->
+      <div class="dashboard-history" id="historySection">
+        <h3>Recent History</h3>
+        <ul id="historyList"></ul>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
