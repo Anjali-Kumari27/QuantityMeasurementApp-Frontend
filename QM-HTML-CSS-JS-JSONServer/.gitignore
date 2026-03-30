@@ -1,0 +1,20 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Eclipse / STS
+.settings/
+.project
+.classpath
+
+# Node (future me use karegi)
+node_modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
