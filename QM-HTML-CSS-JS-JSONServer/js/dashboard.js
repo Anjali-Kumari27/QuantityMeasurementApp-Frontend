@@ -49,6 +49,8 @@ const historyList = document.getElementById("historyList");
 const historyBtn = document.getElementById("historyBtn");
 const historySection = document.getElementById("historySection");
 
+const logoutBtn = document.getElementById("logoutBtn");
+
 // Initial load
 loadUnits(currentType);
 updateOperationUI();
@@ -109,6 +111,17 @@ historyBtn.addEventListener("click", function (e) {
   });
 });
 
+// Logout button click
+if (logoutBtn) {
+  logoutBtn.addEventListener("click", function () {
+    // Remove saved login data
+    localStorage.removeItem("token");
+    localStorage.removeItem("userEmail");
+
+    // Redirect to login page
+    window.location.href = "login.html";
+  });
+}
 /* ================= MAIN ACTION BUTTON ================= */
 actionBtn.addEventListener("click", async function () {
   dashboardMessage.style.color = "red";

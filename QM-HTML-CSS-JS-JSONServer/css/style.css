@@ -119,7 +119,7 @@ button {
 
 #signupMessage,
 #loginMessage {
-  margin-top: 10px;
+  margin-top: 12px;
   text-align: center;
   color: red;
 }
@@ -265,6 +265,26 @@ button {
   margin-bottom: 25px;
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logout-btn {
+  width: 100px;
+  height: 36px;
+  margin-top: 0;
+  background: brown;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #8b1e1e;
+}
 .op-btn {
   width: 140px;
   height: 42px;
@@ -397,4 +417,29 @@ button {
   .dashboard-convert-btn {
     width: 100%;
   }
+
+  .switch-row {
+  width: 100%;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 15px;
+  color: #222;
+}
+
+.switch-row span,
+.switch-row a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.switch-row a {
+  margin-left: 4px;
+  color: brown;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.switch-row a:hover {
+  text-decoration: underline;
+}
 }
