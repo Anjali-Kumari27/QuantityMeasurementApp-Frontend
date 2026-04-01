@@ -124,6 +124,11 @@ export default function Login() {
 
             <button type="submit">Login</button>
 
+            <p className="switch-row">
+               <span>Don’t have an account?</span>
+               <Link to="/signup">Signup</Link>
+            </p>
+            
             <p className="auth-message" style={{ color: messageColor }}>
               {message}
             </p>

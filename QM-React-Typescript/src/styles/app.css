@@ -402,4 +402,21 @@ button {
   .dashboard-convert-btn {
     width: 100%;
   }
+  .switch-row {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.switch-row a {
+  color: brown;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.switch-row a:hover {
+  text-decoration: underline;
+}
 }
