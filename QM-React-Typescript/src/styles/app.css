@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* ================= AUTH PAGES ================= */
+.auth-page {
+  background: #8c8c8c;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+}
+
+.left-panel {
+  width: 320px;
+  height: 420px;
+  background: white;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: white;
+  border: 10px solid #93c5fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.left-panel h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.right-panel {
+  width: 380px;
+  background: white;
+  padding: 25px;
+  border-radius: 0 15px 15px 0;
+}
+
+.signup-panel {
+  min-height: 470px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  text-decoration: none;
+  color: gray;
+}
+
+.tab.active {
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid brown;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.password-box {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+  background: brown;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-message {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* ================= DASHBOARD ================= */
+.dashboard-body {
+  background: #f2f3f7;
+  min-height: 100vh;
+}
+
+.dashboard-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f2f3f7;
+}
+
+.dashboard-breadcrumb {
+  width: 100%;
+  background: #f7f7f7;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 20px 28px;
+  font-size: 16px;
+  color: #555;
+}
+
+.dashboard-arrow {
+  margin: 0 8px;
+}
+
+.dashboard-topbar {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 18px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-topbar h2 {
+  font-size: 20px;
+  color: #111;
+}
+
+.top-link-btn {
+  background: transparent;
+  color: #444;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  margin-top: 0;
+  height: auto;
+}
+
+.dashboard-welcome {
+  width: 100%;
+  background: #466bf0;
+  text-align: center;
+  padding: 22px 10px;
+}
+
+.dashboard-welcome h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.dashboard-container {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+}
+
+.dashboard-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.logout-btn {
+  width: 120px;
+  margin-top: 0;
+}
+
+.dashboard-container h3 {
+  color: #333;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.dashboard-card {
+  width: 160px;
+  height: 140px;
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dashboard-card.active[data-type="length"] {
+  border-color: #4fd1c5;
+  background: #eefcf9;
+  color: #20b2aa;
+}
+
+.dashboard-card.active[data-type="temperature"] {
+  border-color: #ff8b8b;
+  background: #fff1f1;
+  color: #ff5a5a;
+}
+
+.dashboard-card.active[data-type="volume"] {
+  border-color: #9f79ff;
+  background: #f4efff;
+  color: #7b52ff;
+}
+
+.dashboard-card.active[data-type="weight"] {
+  border-color: #f5c04f;
+  background: #fff9eb;
+  color: #d89b00;
+}
+
+.dashboard-operation-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.op-btn {
+  width: 140px;
+  height: 42px;
+  border: none;
+  border-radius: 4px;
+  background: #cfcfcf;
+  color: #222;
+  cursor: pointer;
+  margin-top: 0;
+}
+
+.op-btn.active-op {
+  background: #466bf0;
+  color: white;
+}
+
+.op-btn:disabled {
+  background: #e3e3e3;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.dashboard-conversion {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.dashboard-box {
+  flex: 1;
+  min-width: 280px;
+}
+
+.dashboard-box label,
+.dashboard-result-unit-box label,
+.dashboard-result-box label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dashboard-box input,
+.dashboard-result-box input {
+  width: 100%;
+  height: 55px;
+  border: 1px solid #d9d2f5;
+  padding: 12px 14px;
+  font-size: 22px;
+  background: white;
+  outline: none;
+  margin-top: 0;
+}
+
+.dashboard-box select,
+.dashboard-result-unit-box select {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #d9d2f5;
+  padding: 0 12px;
+  font-size: 15px;
+  background: white;
+  outline: none;
+  margin-top: 8px;
+}
+
+.dashboard-result-unit-box,
+.dashboard-result-box {
+  margin-bottom: 20px;
+}
+
+.dashboard-convert-btn {
+  width: 200px;
+  height: 42px;
+  background: #466bf0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.dashboard-message {
+  margin-top: 12px;
+  font-size: 14px;
+  min-height: 20px;
+}
+
+.dashboard-history {
+  margin-top: 30px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-history h3 {
+  margin-bottom: 14px;
+}
+
+#historyList {
+  list-style: none;
+  padding-left: 0;
+}
+
+#historyList li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+  font-size: 15px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 90%;
+    border-radius: 15px;
+  }
+
+  .dashboard-cards,
+  .dashboard-operation-buttons {
+    justify-content: center;
+  }
+
+  .dashboard-convert-btn {
+    width: 100%;
+  }
+}
