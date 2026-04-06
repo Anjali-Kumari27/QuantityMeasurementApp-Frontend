@@ -7,7 +7,6 @@ import type {
 } from "../types";
 
 const BASE_URL = "http://localhost:8080";
-
 // ================= AUTH =================
 
 export async function registerUser(data: {
@@ -55,6 +54,10 @@ export async function loginUser(data: {
 
 function getAuthHeaders(): HeadersInit {
   const token = localStorage.getItem("token");
+
+  if (!token) {
+    return { "Content-Type": "application/json" };
+  }
 
   return {
     "Content-Type": "application/json",

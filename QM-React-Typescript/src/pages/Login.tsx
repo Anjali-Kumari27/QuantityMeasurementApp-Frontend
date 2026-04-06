@@ -62,6 +62,8 @@ export default function Login() {
       });
 
       localStorage.setItem("token", response.token);
+      console.log("Saved Token:", response.token);
+
       localStorage.setItem("userEmail", formData.email);
 
       setMessageColor("green");
